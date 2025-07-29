@@ -141,7 +141,7 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
             >
               Rất tiếc khi bạn không thể tham dự!
             </h3>
-            <p className="text-gray-500 font-light text-lg leading-relaxed max-w-md mx-auto">
+            <p className="text-gray-500 font-light text-lg leading-relaxed max-w-md mx-auto" style={{ fontFamily: "Playfair Display, serif" }} >
               Chúng tôi hiểu rằng bạn có thể có những kế hoạch khác. Cảm ơn bạn đã thông báo cho chúng tôi.
             </p>
           </div>
@@ -149,7 +149,7 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
           {/* Status Badge */}
           <div className="inline-flex items-center space-x-3 bg-gray-100 border border-gray-200 px-6 py-3 rounded-full">
             <div className="w-2 h-2 bg-gray-300 rounded-full animate-pulse"></div>
-            <span className="text-gray-500 font-normal text-sm">Không thể tham gia</span>
+            <span className="text-gray-500 font-normal text-sm"  style={{ fontFamily: "Playfair Display, serif" }}>Không thể tham gia</span>
           </div>
         </div>
       </div>
@@ -178,14 +178,15 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
         <div className="space-y-3">
           <Label className="text-gray-700 text-base font-light flex items-center space-x-2">
             <User className="w-4 h-4 text-gray-400" />
-            <span>Họ và Tên</span>
-            <span className="text-pink-300 text-sm">*</span>
+            <span  style={{ fontFamily: "Playfair Display, serif" }}>Họ và Tên</span>
+            <span className="text-pink-300 text-sm"  style={{ fontFamily: "Playfair Display, serif" }}>*</span>
           </Label>
           <div className="relative">
             <Input
               value={formData.name}
               onChange={(e) => updateField("name", e.target.value)}
               required
+              style={{ fontFamily: "Playfair Display, serif" }}
               className="w-full px-6 py-4 text-base border border-gray-100 bg-gray-25 rounded-[24px] focus:bg-white focus:border-pink-200 focus:ring-2 focus:ring-pink-100 transition-all duration-300 placeholder:text-gray-300"
               placeholder="Nhập họ và tên của bạn"
             />
@@ -196,12 +197,13 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
         <div className="space-y-3">
           <Label className="text-gray-700 text-base font-light flex items-center space-x-2">
             <Phone className="w-4 h-4 text-gray-400" />
-            <span>Số Điện Thoại</span>
-            <span className="text-gray-300 text-sm font-light">(Không bắt buộc)</span>
+            <span  style={{ fontFamily: "Playfair Display, serif" }}>Số Điện Thoại</span>
+            <span className="text-gray-300 text-sm font-light"  style={{ fontFamily: "Playfair Display, serif" }}>(Không bắt buộc)</span>
           </Label>
           <div className="relative">
             <Input
               type="tel"
+              style={{ fontFamily: "Playfair Display, serif" }}
               value={formData.phone}
               onChange={(e) => updateField("phone", e.target.value)}
               className="w-full px-6 py-4 text-base border border-gray-100 bg-gray-25 rounded-[24px] focus:bg-white focus:border-pink-200 focus:ring-2 focus:ring-pink-100 transition-all duration-300 placeholder:text-gray-300"
@@ -214,16 +216,17 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
         <div className="space-y-3">
           <Label className="text-gray-700 text-base font-light flex items-center space-x-2">
             <Users className="w-4 h-4 text-gray-400" />
-            <span>Số Lượng Khách</span>
+            <span  style={{ fontFamily: "Playfair Display, serif" }}>Số Lượng Khách</span>
           </Label>
           <div className="relative">
             <select
               value={formData.guests}
+              style={{ fontFamily: "Playfair Display, serif" }}
               onChange={(e) => updateField("guests", Number.parseInt(e.target.value))}
               className="w-full px-6 py-4 text-base border border-gray-100 bg-gray-25 rounded-[24px] focus:bg-white focus:border-pink-200 focus:ring-2 focus:ring-pink-100 transition-all duration-300 appearance-none cursor-pointer text-gray-700"
             >
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
-                <option key={num} value={num}>
+                <option key={num} value={num} >
                   {num} {num === 1 ? "người" : "người"}
                 </option>
               ))}
@@ -234,7 +237,7 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
 
         {/* Attendance Status */}
         <div className="space-y-4">
-          <Label className="text-gray-700 text-base font-light">Trạng Thái Tham Gia</Label>
+          <Label className="text-gray-700 text-base font-light"  style={{ fontFamily: "Playfair Display, serif" }}>Trạng Thái Tham Gia</Label>
           <div className="space-y-3">
             {/* Attending Option */}
             <label className="block cursor-pointer group">
@@ -251,13 +254,14 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
                       type="radio"
                       name="attendance"
                       value="attending"
+                      style={{ fontFamily: "Playfair Display, serif" }}
                       checked={formData.attendance === "attending"}
                       onChange={(e) => updateField("attendance", e.target.value)}
                       className="w-5 h-5 text-pink-300 border-2 border-gray-200 focus:ring-pink-100 focus:ring-2"
                     />
                   </div>
                   <div className="flex-1">
-                    <span className="text-base font-light text-gray-700">✨ Tham Gia</span>
+                    <span className="text-base font-light text-gray-700"  style={{ fontFamily: "Playfair Display, serif" }}>✨ Tham Gia</span>
                   </div>
                   {formData.attendance === "attending" && (
                     <Heart className="w-5 h-5 text-pink-300 fill-current animate-pulse" />
@@ -281,13 +285,14 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
                       type="radio"
                       name="attendance"
                       value="not-attending"
+                      style={{ fontFamily: "Playfair Display, serif" }}
                       checked={formData.attendance === "not-attending"}
                       onChange={(e) => updateField("attendance", e.target.value)}
                       className="w-5 h-5 text-gray-300 border-2 border-gray-200 focus:ring-gray-100 focus:ring-2"
                     />
                   </div>
                   <div className="flex-1">
-                    <span className="text-base font-light text-gray-700">😔 Rất Tiếc Không Thể Tham Dự</span>
+                    <span className="text-base font-light text-gray-700"  style={{ fontFamily: "Playfair Display, serif" }}>😔 Rất Tiếc Không Thể Tham Dự</span>
                   </div>
                 </div>
               </div>
@@ -304,7 +309,7 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
           >
             <div className="flex items-center justify-center space-x-3">
               <Heart className="w-5 h-5 fill-current" />
-              <span>{isSubmitting ? "Đang gửi..." : "Gửi Xác Nhận"}</span>
+              <span  style={{ fontFamily: "Playfair Display, serif" }}>{isSubmitting ? "Đang gửi..." : "Gửi Xác Nhận"}</span>
               <Heart className="w-5 h-5 fill-current" />
             </div>
           </Button>
@@ -313,7 +318,7 @@ export default function RSVPForm({ onSubmit, className = "" }: RSVPFormProps) {
 
       {/* Footer Note */}
       <div className="text-center mt-8 pt-6 border-t border-gray-100">
-        <p className="text-gray-400 text-sm font-light leading-relaxed">
+        <p className="text-gray-400 text-sm font-light leading-relaxed"  style={{ fontFamily: "Playfair Display, serif" }}>
           Sự hiện diện của bạn là món quà quý giá nhất cho chúng tôi
         </p>
       </div>

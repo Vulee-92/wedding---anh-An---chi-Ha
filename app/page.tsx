@@ -66,19 +66,12 @@ export default function WeddingInvitation() {
   // Banking information with VietQR
   const bankingInfo = [
     {
-      name: "Trần Anh Huy",
+      name: "Nguyễn Văn A",
       bank: "Vietcombank",
-      accountNumber: "0721000653710",
+      accountNumber: "0123123123",
       bankCode: "VCB",
       qrCode: `https://img.vietqr.io/image/VCB-1234567890-compact2.png?amount=&addInfo=Mung%20cuoi%20Anh%20Huy%20Cam%20Vang&accountName=TRAN%20ANH%20HUY`,
-    },
-    {
-      name: "Mai Thị Cẩm Vang",
-      bank: "Vietcombank",
-      accountNumber: "0921000710627",
-      bankCode: "VCB",
-      qrCode: `https://img.vietqr.io/image/TCB-0987654321-compact2.png?amount=&addInfo=Mung%20cuoi%20Anh%20Huy%20Cam%20Vang&accountName=MAI%20THI%20CAM%20VANG`,
-    },
+    }
   ]
 
    // Music control functions
@@ -943,7 +936,7 @@ export default function WeddingInvitation() {
               style={{ animationDelay: "0.2s" }}
             >
               <p className="text-lg sm:text-xl text-primary" style={{ fontFamily: "Playfair Display, serif" }}>
-                Vào Lúc <span className="font-medium">18H00 - THỨ BẢY</span>
+                Vào Lúc <span className="font-medium" style={{ fontFamily: "Playfair Display, serif" }}>18H00 - THỨ BẢY</span>
               </p>
 
               {/* Date Display with Dividers */}
@@ -1089,8 +1082,8 @@ export default function WeddingInvitation() {
               </div>
 
               <p
-                className="text-gray-600 text-base sm:text-lg font-light leading-relaxed"
-                style={{ fontFamily: "Playfair Display, serif" }}
+                className="text-gray-600 text-base sm:text-lg"
+               style={{ fontFamily: "Playfair Display, serif" }}
               >
                 Sự hiện diện của bạn sẽ làm cho ngày đặc biệt của chúng tôi trở nên hoàn hảo hơn
               </p>
@@ -1119,7 +1112,7 @@ export default function WeddingInvitation() {
               }`}
             style={{ animationDelay: "0.6s" }}
           >
-            <p className="text-gray-500 text-sm font-light">
+            <p className="text-gray-500 text-sm font-light" style={{ fontFamily: "Playfair Display, serif" }}>
               Vui lòng xác nhận trước ngày <span className="font-medium text-primary">20/09/2025</span>
             </p>
           </div>
@@ -1135,7 +1128,7 @@ export default function WeddingInvitation() {
               }`}
           >
             <h2
-              className="text-3xl sm:text-4xl text-primary font-light tracking-wide font-ooohbaby"
+              className="text-3xl sm:text-4xl text-primary font-light tracking-wide font-ooohbaby" 
               // style={{ fontFamily: "Playfair Display, serif" }}
             >
               Địa Điểm Tổ Chức
@@ -1164,8 +1157,8 @@ export default function WeddingInvitation() {
                   >
                     NHÀ HÀNG SUNNY FARM
                   </h3>
-                  <p className="text-gray-600 text-base sm:text-lg">173/1 Bình Lợi, Phường 13, Quận Bình Thạnh</p>
-                  <p className="text-gray-500 text-sm sm:text-base mt-2">Thành phố Hồ Chí Minh</p>
+                  <p className="text-gray-600 text-base sm:text-lg" style={{ fontFamily: "Playfair Display, serif" }}>173/1 Bình Lợi, Phường 13, Quận Bình Thạnh</p>
+                  <p className="text-gray-500 text-sm sm:text-base mt-2" style={{ fontFamily: "Playfair Display, serif" }}>Thành phố Hồ Chí Minh</p>
                 </div>
 
                 {/* Map - Real Google Maps */}
@@ -1211,7 +1204,7 @@ export default function WeddingInvitation() {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-primary font-medium text-sm sm:text-base">Chỉ Đường</span>
+                    <span className="text-primary font-medium text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Chỉ Đường</span>
                   </Button>
 
                   <Button
@@ -1222,23 +1215,23 @@ export default function WeddingInvitation() {
                     <svg className="w-4 sm:w-5 h-4 sm:h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                     </svg>
-                    <span className="text-primary font-medium text-sm sm:text-base">Gọi Điện</span>
+                    <span className="text-primary font-medium text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Gọi Điện</span>
                   </Button>
                 </div>
 
                 {/* Additional Info */}
                 <div className="bg-gray-50 rounded-2xl p-4 sm:p-6 space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600 font-medium text-sm sm:text-base">Thời gian:</span>
-                    <span className="text-primary text-sm sm:text-base">18:00 - 22:00</span>
+                    <span className="text-gray-600 font-medium text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Thời gian:</span>
+                    <span className="text-primary text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>18:00 - 22:00</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600 font-medium text-sm sm:text-base">Ngày:</span>
-                    <span className="text-primary text-sm:text-base">Thứ Bảy, 14/06/2025</span>
+                    <span className="text-gray-600 font-medium text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Ngày:</span>
+                    <span className="text-primary text-sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Thứ Bảy, 14/06/2025</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600 font-medium text-sm sm:text-base">Dress code:</span>
-                    <span className="text-primary text-sm:text-base">Trang trọng</span>
+                    <span className="text-gray-600 font-medium text-sm sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Dress code:</span>
+                    <span className="text-primary text-sm:text-base" style={{ fontFamily: "Playfair Display, serif" }}>Trang trọng</span>
                   </div>
                 </div>
               </div>
@@ -1251,7 +1244,7 @@ export default function WeddingInvitation() {
               }`}
             style={{ animationDelay: "0.6s" }}
           >
-            <p className="text-gray-500 text-sm font-light leading-relaxed">
+            <p className="text-gray-500 text-sm font-light leading-relaxed" style={{ fontFamily: "Playfair Display, serif" }}>
               Nhà hàng có bãi đỗ xe rộng rãi và thuận tiện
               <br />
               Vui lòng đến đúng giờ để không bỏ lỡ những khoảnh khắc đặc biệt
@@ -1403,14 +1396,14 @@ export default function WeddingInvitation() {
                         {/* Banking Details - Compact */}
                         <div className="bg-gray-50 rounded-xl p-3 space-y-2">
                           <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium text-gray-600">Ngân hàng:</span>
-                            <span className="text-sm text-primary font-medium">{bank.bank}</span>
+                            <span className="text-sm font-medium text-gray-600" style={{ fontFamily: "Playfair Display, serif" }}>Ngân hàng:</span>
+                            <span className="text-sm text-primary font-medium" style={{ fontFamily: "Playfair Display, serif" }}>{bank.bank}</span>
                           </div>
 
                           <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium text-gray-600">STK:</span>
+                            <span className="text-sm font-medium text-gray-600" style={{ fontFamily: "Playfair Display, serif" }}>STK:</span>
                             <div className="flex items-center space-x-2">
-                              <span className="text-sm text-primary font-mono font-medium">{bank.accountNumber}</span>
+                              <span className="text-sm text-primary font-mono font-medium" style={{ fontFamily: "Playfair Display, serif" }}>{bank.accountNumber}</span>
                               <Button
                                 size="sm"
                                 variant="outline"
@@ -1424,14 +1417,14 @@ export default function WeddingInvitation() {
 
                           {copiedAccount === `account-${index}` && (
                             <div className="text-center">
-                              <div className="text-xs text-accent font-medium animate-fade-in-up">✓ Đã sao chép!</div>
+                              <div className="text-xs text-accent font-medium animate-fade-in-up" style={{ fontFamily: "Playfair Display, serif" }}>✓ Đã sao chép!</div>
                             </div>
                           )}
                         </div>
 
                         {/* Note */}
                         <div className="text-center">
-                          <p className="text-xs text-gray-500 leading-relaxed">
+                          <p className="text-xs text-gray-500 leading-relaxed" style={{ fontFamily: "Playfair Display, serif" }}>
                             Chuyển khoản theo thông tin: Tên của bạn
                           </p>
                         </div>
