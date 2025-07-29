@@ -27,10 +27,32 @@ const greatVibes = Great_Vibes({
   display: "swap",
 })
 export const metadata: Metadata = {
-  title: "Thiệp Cưới Anh Huy - Cẩm Vang",
-  description: "Thiệp cưới điện tử của Trần Anh Huy và Mai Thị Cẩm Vang",
-    generator: 'https://pixel-duo.vercel.app/'
-}
+  title: "Thiệp Cưới Join Ân - Cát Hạ",
+  description: "Nếu Đức Chúa Trời yêu thương chúng ta như thế, chúng cũng phải yêu thương nhau. - 1 Giăng 4:11",
+  generator: 'https://pixel-duo.vercel.app/',
+  openGraph: {
+    title: "Thiệp Cưới Join Ân - Cát Hạ",
+    description: "Nếu Đức Chúa Trời yêu thương chúng ta như thế, chúng cũng phải yêu thương nhau. - 1 Giăng 4:11",
+    url: "https://an-ha.vercel.app/", // Thay bằng domain thật
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/da4wi5yxi/image/upload/v1753777468/IMG_5421_11zon_1_lkexey.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Thiệp Cưới Join Ân - Cát Hạ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thiệp Cưới Join Ân - Cát Hạ",
+    description: "Nếu Đức Chúa Trời yêu thương chúng ta như thế, chúng cũng phải yêu thương nhau. - 1 Giăng 4:11",
+    images: [
+      "https://res.cloudinary.com/da4wi5yxi/image/upload/v1753777468/IMG_5421_11zon_1_lkexey.jpg",
+    ],
+  },
+};
 
 export default function RootLayout({
   children,
